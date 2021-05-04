@@ -6,7 +6,7 @@ import avatar from "../images/me.png";
 
 export default function NavBar() {
   return (
-    <header className="bg-gray-600 bg-opacity-80">
+    <header className="bg-gray-500 bg-opacity-70">
       <div className="container mx-auto flex justify-between">
         <nav className="flex">
           <NavLink to="/" exact>
@@ -18,28 +18,28 @@ export default function NavBar() {
             to="/"
             exact
             activeClassName="text-white"
-            className="inflex-flex items-center py-6 px-3 my-4 text-blue-50 hover:text-white text-5xl font-bold cursive tracing-widest"
+            className="inflex-flex items-center py-6 px-3 my-4 text-white hover:text-gray-100 text-5xl font-bold cursive tracing-widest"
           >
             Brando
           </NavLink>
           <NavLink
             to="/post"
-            activeClassName="text-white bg-blue-400"
-            className="inline-flex items-center py-3 px-3 my-10 rounded text-blue-50 hover:text-white body"
+            activeClassName="text-white bg-gray-400"
+            className="inline-flex items-center py-3 px-3 my-12 rounded text-white hover:text-gray-100 body"
           >
             Blogs
           </NavLink>
           <NavLink
             to="/project"
-            activeClassName="text-white bg-blue-400"
-            className="inline-flex items-center py-3 px-3 my-10 rounded text-blue-50 hover:text-white body"
+            activeClassName="text-white bg-gray-400"
+            className="inline-flex items-center py-3 px-3 my-12 rounded text-white hover:text-gray-100 body"
           >
             Projects
           </NavLink>
           <NavLink
             to="/about"
-            activeClassName="text-white bg-blue-400"
-            className="inline-flex items-center py-3 px-3 my-10 rounded text-blue-50 hover:text-white body"
+            activeClassName="text-white bg-gray-400"
+            className="inline-flex items-center py-3 px-3 my-12 rounded text-white hover:text-gray-100 body"
           >
             About Me
           </NavLink>
