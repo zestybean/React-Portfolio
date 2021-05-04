@@ -6,7 +6,7 @@ import avatar from "../images/me.png";
 
 export default function NavBar() {
   return (
-    <header className="bg-blue-300">
+    <header className="bg-gray-600 bg-opacity-80">
       <div className="container mx-auto flex justify-between">
         <nav className="flex">
           <NavLink to="/" exact>
