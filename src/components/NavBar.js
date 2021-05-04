@@ -59,6 +59,13 @@ export default function NavBar() {
             fgColor="#fff"
             style={{ height: 45, width: 45 }}
           />
+          <SocialIcon
+            url="mailto:brando.lugo@gmail.com"
+            className="mr-4"
+            target="_blank"
+            fgColor="#fff"
+            style={{ height: 45, width: 45 }}
+          />
         </div>
       </div>
     </header>
