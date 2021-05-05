@@ -4,11 +4,11 @@ import { SocialIcon } from "react-social-icons";
 
 import avatar from "../images/me.png";
 
-export default function NavBar() {
+export default function Navbar() {
   return (
-    <header className="bg-gray-500 bg-opacity-70">
+    <nav className="bg-gray-500 items-center">
       <div className="container mx-auto flex justify-between">
-        <nav className="flex">
+        <div className="flex pl-6">
           <NavLink to="/" exact>
             <div className="inline-flex  my-6 rounded-full h-24 w-24 flex justify-items-center bg-white">
               <img src={avatar} alt=""></img>
@@ -22,6 +22,25 @@ export default function NavBar() {
           >
             Brando
           </NavLink>
+        </div>
+
+        <div className="px-4 cursor-pointer md:hidden inline-flex items-center py-3 px-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </div>
+        <div className="pr-6 md:block hidden">
           <NavLink
             to="/post"
             activeClassName="text-white bg-gray-400"
@@ -43,11 +62,10 @@ export default function NavBar() {
           >
             About Me
           </NavLink>
-        </nav>
-        <div className="inline-flex py-3 px-3 my-6">
+
           <SocialIcon
             url="https://github.com/zestybean"
-            className="mr-4"
+            className="ml-4 mr-4"
             target="_blank"
             fgColor="#fff"
             style={{ height: 45, width: 45 }}
@@ -68,6 +86,6 @@ export default function NavBar() {
           />
         </div>
       </div>
-    </header>
+    </nav>
   );
 }
