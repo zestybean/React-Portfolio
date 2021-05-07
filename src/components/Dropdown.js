@@ -12,6 +12,7 @@ export default function Dropdown({ isOpen, toggle }) {
       }
     >
       <NavLink
+        onClick={toggle}
         to="/post"
         activeClassName="text-white bg-gray-400"
         className=" p-4 rounded text-white hover:text-gray-100 body"
@@ -19,6 +20,7 @@ export default function Dropdown({ isOpen, toggle }) {
         Blogs
       </NavLink>
       <NavLink
+        onClick={toggle}
         to="/project"
         activeClassName="text-white bg-gray-400"
         className=" p-4 rounded text-white hover:text-gray-100 body"
@@ -26,6 +28,7 @@ export default function Dropdown({ isOpen, toggle }) {
         Projects
       </NavLink>
       <NavLink
+        onClick={toggle}
         to="/about"
         activeClassName="text-white bg-gray-400"
         className=" p-4 rounded text-white hover:text-gray-100 body"
@@ -34,20 +37,23 @@ export default function Dropdown({ isOpen, toggle }) {
       </NavLink>
       <div className="grid-rows-1 items-center">
         <SocialIcon
+          onClick={toggle}
           url="https://github.com/zestybean"
-          className="ml-4 mr-4 my-3"
+          className="ml-4 mr-4 my-3 "
           target="_blank"
           fgColor="#fff"
           style={{ height: 45, width: 45 }}
         />
         <SocialIcon
+          onClick={toggle}
           url="https://www.linkedin.com/in/brandolugo"
-          className="ml-4 mr-4 my-3"
+          className="ml-4 mr-4 my-3 "
           target="_blank"
           fgColor="#fff"
           style={{ height: 45, width: 45 }}
         />
         <SocialIcon
+          onClick={toggle}
           url="mailto:brando.lugo@gmail.com"
           className="ml-4 mr-4 my-3"
           target="_blank"
