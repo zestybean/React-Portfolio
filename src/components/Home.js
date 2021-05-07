@@ -12,10 +12,10 @@ export default function Home() {
       />
       <FadeIn>
         <section>
-          <div className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8 cursive">
-            <h1 className="text-6xl text-white leading-none lg:leading-snug home-name">
+          <div className="relative flex justify-center pt-10 px-10 cursive">
+            <div className="lg:text-8xl md:text-7xl sm:text-6xl text-white home-name">
               Hi, Welcome.
-            </h1>
+            </div>
           </div>
         </section>
       </FadeIn>

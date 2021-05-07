@@ -4,7 +4,7 @@ import { SocialIcon } from "react-social-icons";
 
 import avatar from "../images/me.png";
 
-export default function Navbar() {
+export default function Navbar({ toggle }) {
   return (
     <nav className="bg-gray-500 items-center">
       <div className="container mx-auto flex justify-between">
@@ -24,7 +24,10 @@ export default function Navbar() {
           </NavLink>
         </div>
 
-        <div className="px-4 cursor-pointer md:hidden inline-flex items-center py-3 px-3">
+        <div
+          className="px-4 cursor-pointer md:hidden inline-flex items-center py-3 px-3"
+          onClick={toggle}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6 text-white"
